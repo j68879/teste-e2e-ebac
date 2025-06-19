@@ -22,7 +22,7 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
 
   it('Deve fazer um pedido na loja Ebac Shop de ponta a ponta', () => {
       //TODO: Coloque todo o fluxo de teste aqui, considerando as boas práticas e otimizações
-      // Adicionando os produtos no carrinho
+      // Adicionando produtos no carrinho
        cy.fixture('produtos').then(dados => {
             produtosPage.buscarProduto(dados[0].nomeProduto)
             produtosPage.addProdutoCarrinho(dados[0].tamanho, dados[0].cor, dados[0].quantidade)
