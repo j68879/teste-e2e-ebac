@@ -1,0 +1,32 @@
+[
+    {
+        "nomeProduto": "Ajax Full-Zip Sweatshirt",
+        "tamanho": "S",
+        "cor":"Green",
+        "quantidade": 2
+
+    },
+    {
+        "nomeProduto": "Hero Hoodie",
+        "tamanho": "M",
+        "cor":"Gray",
+        "quantidade": 3
+
+    }, 
+    {
+        "nomeProduto": "Grayson Crewneck Sweatshirt",
+        "tamanho": "L",
+        "cor":"Red",
+        "quantidade": 4
+
+    },
+        {
+        "nomeProduto": "Aether Gym Pant",
+        "tamanho": 34,
+        "cor":"Brown",
+        "quantidade": 2
+
+    }    
+
+
+]

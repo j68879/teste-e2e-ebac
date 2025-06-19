@@ -1,0 +1,20 @@
+[
+    {
+        "rua": "rua do teste",
+        "cidade": "São Paulo",
+        "estado":"São Paulo",
+        "cep": 22222222,
+        "telefone": "55555555"
+
+    },
+    {
+        "rua": "rua do teste 2",
+        "cidade": "Rio de Janeiro",
+        "estado":"Rio de Janeiro",
+        "cep": 22222222,
+        "telefone": "55555555"
+
+    }
+   
+
+]
