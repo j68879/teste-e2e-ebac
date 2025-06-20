@@ -36,23 +36,19 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
             produtosPage.buscarProduto(dados[3].nomeProduto)
             produtosPage.addProdutoCarrinho(dados[3].tamanho, dados[3].cor, dados[3].quantidade)
             cy.get('.woocommerce-message').should('contain', dados[3].nomeProduto)
-        })
-        })
-
-  it('Preenchendo dados do checkout', () => {
-    cy.get('.dropdown-toggle > .text-skin > .icon-basket').click()
-    cy.get('#cart > .dropdown-menu > .widget_shopping_cart_content > .mini_cart_content > .mini_cart_inner > .mcart-border > .buttons > .checkout').click()
-    cy.fixture('endereco').then(dados => {
+            cy.get('.dropdown-toggle > .text-skin > .icon-basket').click()
+            cy.get('.button.checkout.wc-forward').eq(1).click()
+          
+        cy.fixture('endereco').then(dados => {
             checkoutPage.preencherDadosCheckout(dados[0].rua, dados[0].cidade, dados[0].cep, dados[0].telefone)
             checkoutPage.preencherEstado(dados[0].estado)
             cy.get('#terms').click()
             cy.get('#place_order').click()
-            cy.get('.page-title').should('exist')
-            
-  });
+            cy.get('.page-title').should('contain.text', 'Checkout');
 
+        })
+        })
         
-      
-    
+          
   });
 })
